@@ -85,7 +85,7 @@ class RequestParams(CamelModel):
     meta: RequestMeta = RequestMeta()
     query: RequestQuery = RequestQuery()
 
-        def from_request(self, request: Request) -> Self:
+    def from_request(self, request: Request) -> Self:
         if request.method != "POST" or not request.has_body or not request.can_read_body:
             for k, v in request.query.items():
                 if k == "requestedSchema":
