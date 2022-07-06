@@ -4,6 +4,7 @@ from typing import List, Dict, Optional
 import re
 from urllib.error import HTTPError
 
+import requests
 import owlready2
 from pymongo.mongo_client import MongoClient
 import progressbar
@@ -53,7 +54,11 @@ def insert_all_ontology_terms_used():
 
 
 def get_ontology_name(ontology: owlready2.Ontology) -> str:
-    return ontology.name
+    ontology_url = "https://www.ebi.ac.uk/ols/api/ontologies/{}".format(ontology.name)
+    try:
+        return requests.get(ontology_url).json()["config"]["title"]
+    except:
+        return ontology.name
 
 
 def load_ontology_obo(ontology_id: str) -> Optional[owlready2.Ontology]:
@@ -104,7 +109,7 @@ def get_ontology_term_label(ontology: owlready2.Ontology, term: str) -> Optional
 def get_ontology_term_count(collection_name: str, term: str) -> int:
     query = {
         '$text': {
-            '$search': term
+            '$search': '\"' + term + '\"'
         }
     }
     return client.beacon\

@@ -3,6 +3,7 @@ import logging
 from aiohttp import web
 from aiohttp.web_request import Request
 from bson import json_util
+from beacon import conf
 
 from beacon.request import ontologies
 from beacon.request.model import Granularity, RequestParams
@@ -50,12 +51,26 @@ def generic_handler(db_fn, request=None):
         response_converted = records
 
         response = None
+
         if qparams.query.requested_granularity == Granularity.BOOLEAN:
             response = build_beacon_boolean_response(response_converted, count, qparams, lambda x, y: x, entity_schema)
+        
         elif qparams.query.requested_granularity == Granularity.COUNT:
-            response = build_beacon_count_response(response_converted, count, qparams, lambda x, y: x, entity_schema)
+            if conf.max_beacon_granularity == Granularity.BOOLEAN:
+                response = build_beacon_boolean_response(response_converted, count, qparams, lambda x, y: x, entity_schema)
+            else:
+                response = build_beacon_count_response(response_converted, count, qparams, lambda x, y: x, entity_schema)
+        
+        # qparams.query.requested_granularity == Granularity.RECORD:
         else:
-            response = build_beacon_resultset_response(response_converted, count, qparams, lambda x, y: x, entity_schema)
+
+            if conf.max_beacon_granularity == Granularity.BOOLEAN:
+                response = build_beacon_boolean_response(response_converted, count, qparams, lambda x, y: x, entity_schema)
+            elif conf.max_beacon_granularity == Granularity.COUNT:
+                response = build_beacon_count_response(response_converted, count, qparams, lambda x, y: x, entity_schema)
+            else:
+                response = build_beacon_resultset_response(response_converted, count, qparams, lambda x, y: x, entity_schema)
+                
         return await json_stream(request, response)
 
     return wrapper
@@ -69,11 +84,8 @@ def filtering_terms_handler(db_fn, request=None):
 
         # Get response
         _, _, records = db_fn(entry_id, qparams)
-        response_converted = (
-            [r for r in records] if records else []
-        )
-        resources = [ { "id": onto.name, "url": onto.base_iri } for onto in ontologies.ONTOLOGIES.values() ]
-        response = build_filtering_terms_response(response_converted, resources, qparams)
+        resources = ontologies.get_resources()
+        response = build_filtering_terms_response(records, resources, qparams)
         return await json_stream(request, response)
 
     return wrapper
