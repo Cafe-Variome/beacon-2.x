@@ -80,9 +80,12 @@ def format_value(value: Union[str, List[int]]) -> Union[List[int], str, int, flo
     else:
         return value
 
-def format_operator(operator: Operator) -> str:
+def format_operator(operator: Operator, value: Str) -> str:
     if operator == Operator.EQUAL:
-        return "$eq"
+        if "%" in value:
+            return "$regex"
+        else:
+            return "$eq"
     elif operator == Operator.NOT:
         return "$ne"
     elif operator == Operator.GREATER:
@@ -95,10 +98,15 @@ def format_operator(operator: Operator) -> str:
         # operator == Operator.LESS_EQUAL
         return "$lte"
 
+
 def apply_alphanumeric_filter(query: dict, filter: AlphanumericFilter) -> dict:
     formatted_value = format_value(filter.value)
-    formatted_operator = format_operator(filter.operator)
-    query[filter.id] = { formatted_operator: formatted_value }
+    formatted_operator = format_operator(filter.operator, filter.value)
+    if formatted_operator == "$regex":
+        query[filter.id] = {
+            formatted_operator: formatted_value.replace("%", ".*")}
+    else:
+        query[filter.id] = {formatted_operator: formatted_value}
     LOG.debug("QUERY: %s", query)
     return query
 
