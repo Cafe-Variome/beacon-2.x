@@ -20,6 +20,7 @@ LOG = logging.getLogger(__name__)
 
 def collection_handler(db_fn, request=None):
     async def wrapper(request: Request):
+
         # Get params
         json_body = await request.json() if request.method == "POST" and request.has_body and request.can_read_body else {}
         qparams = RequestParams(**json_body).from_request(request)
@@ -51,14 +52,18 @@ def generic_handler(db_fn, request=None):
 
         response = None
         if qparams.query.requested_granularity == Granularity.BOOLEAN:
-            response = build_beacon_boolean_response(response_converted, count, qparams, lambda x, y: x, entity_schema)
+            response = build_beacon_boolean_response(
+                response_converted, count, qparams, lambda x, y: x, entity_schema)
         elif qparams.query.requested_granularity == Granularity.COUNT:
-            response = build_beacon_count_response(response_converted, count, qparams, lambda x, y: x, entity_schema)
+            response = build_beacon_count_response(
+                response_converted, count, qparams, lambda x, y: x, entity_schema)
         else:
-            response = build_beacon_resultset_response(response_converted, count, qparams, lambda x, y: x, entity_schema)
+            response = build_beacon_resultset_response(
+                response_converted, count, qparams, lambda x, y: x, entity_schema)
         return await json_stream(request, response)
 
     return wrapper
+
 
 def filtering_terms_handler(db_fn, request=None):
     async def wrapper(request: Request):
@@ -72,8 +77,10 @@ def filtering_terms_handler(db_fn, request=None):
         response_converted = (
             [r for r in records] if records else []
         )
-        resources = [ { "id": onto.name, "url": onto.base_iri } for onto in ontologies.ONTOLOGIES.values() ]
-        response = build_filtering_terms_response(response_converted, resources, qparams)
+        resources = [{"id": onto.name, "url": onto.base_iri}
+                     for onto in ontologies.ONTOLOGIES.values()]
+        response = build_filtering_terms_response(
+            response_converted, resources, qparams)
         return await json_stream(request, response)
 
     return wrapper

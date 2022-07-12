@@ -37,8 +37,8 @@ def build_response(data, num_total_results, qparams, func):
     """"Fills the `response` part with the correct format in `results`"""
 
     response = {
-        'id': '', # TODO: Set the name of the dataset/cohort
-        'setType': '', # TODO: Set the type of collection
+        'id': '',  # TODO: Set the name of the dataset/cohort
+        'setType': '',  # TODO: Set the type of collection
         'exists': num_total_results > 0,
         'resultsCount': num_total_results,
         'results': data,
@@ -77,11 +77,12 @@ def build_beacon_resultset_response(data,
 # Count Response
 ########################################
 
+
 def build_beacon_count_response(data,
-                                    num_total_results,
-                                    qparams: RequestParams,
-                                    func_response_type,
-                                    entity_schema: DefaultSchemas):
+                                num_total_results,
+                                qparams: RequestParams,
+                                func_response_type,
+                                entity_schema: DefaultSchemas):
     """"
     Transform data into the Beacon response format.
     """
@@ -98,11 +99,12 @@ def build_beacon_count_response(data,
 # Boolean Response
 ########################################
 
+
 def build_beacon_boolean_response(data,
-                                    num_total_results,
-                                    qparams: RequestParams,
-                                    func_response_type,
-                                    entity_schema: DefaultSchemas):
+                                  num_total_results,
+                                  qparams: RequestParams,
+                                  func_response_type,
+                                  entity_schema: DefaultSchemas):
     """"
     Transform data into the Beacon response format.
     """
@@ -119,6 +121,7 @@ def build_beacon_boolean_response(data,
 # Collection Response
 ########################################
 
+
 def build_beacon_collection_response(data, num_total_results, qparams: RequestParams, func_response_type, entity_schema: DefaultSchemas):
     beacon_response = {
         'meta': build_meta(qparams, entity_schema),
@@ -134,6 +137,7 @@ def build_beacon_collection_response(data, num_total_results, qparams: RequestPa
 ########################################
 # Info Response
 ########################################
+
 
 def build_beacon_info_response(data, qparams, func_response_type, authorized_datasets=None):
     if authorized_datasets is None:
@@ -167,9 +171,11 @@ def build_beacon_info_response(data, qparams, func_response_type, authorized_dat
 
     return beacon_response
 
+
 ########################################
 # Service Info Response
 ########################################
+
 
 def build_beacon_service_info_response():
     beacon_response = {
@@ -195,9 +201,11 @@ def build_beacon_service_info_response():
 
     return beacon_response
 
+
 ########################################
 # Filtering terms Response
 ########################################
+
 
 def build_filtering_terms_response(filtering_terms, resources, qparams: RequestParams):
     return {

@@ -1,3 +1,4 @@
+from ast import Str
 from collections import defaultdict
 from typing import List, Union
 import re
@@ -22,12 +23,13 @@ def apply_filters(query: dict, filters: List[dict]) -> dict:
         partial_query = {}
         if "value" in filter:
             filter = AlphanumericFilter(**filter)
-            LOG.debug("Alphanumeric filter: %s %s %s", filter.id, filter.operator, filter.value)
+            LOG.debug("Alphanumeric filter: %s %s %s",
+                      filter.id, filter.operator, filter.value)
             partial_query = apply_alphanumeric_filter(partial_query, filter)
         elif "similarity" in filter or "includeDescendantTerms" in filter or re.match(CURIE_REGEX, filter["id"]):
             filter = OntologyFilter(**filter)
             LOG.debug("Ontology filter: %s", filter.id)
-            partial_query = {"$text": defaultdict(str) }
+            partial_query = {"$text": defaultdict(str)}
             partial_query = apply_ontology_filter(partial_query, filter)
         else:
             filter = CustomFilter(**filter)
@@ -38,13 +40,14 @@ def apply_filters(query: dict, filters: List[dict]) -> dict:
 
 
 def apply_ontology_filter(query: dict, filter: OntologyFilter) -> dict:
-    
+
     is_filter_id_required = True
 
     # Search similar
     if filter.similarity != Similarity.EXACT:
         is_filter_id_required = False
-        similar_terms = ontologies.get_similar_ontology_terms(filter.id, filter.similarity)
+        similar_terms = ontologies.get_similar_ontology_terms(
+            filter.id, filter.similarity)
         LOG.debug("Similar: {}".format(similar_terms))
         for term in similar_terms:
             if query["$text"]["$search"]:
@@ -60,7 +63,7 @@ def apply_ontology_filter(query: dict, filter: OntologyFilter) -> dict:
             if query["$text"]["$search"]:
                 query["$text"]["$search"] += " "
             query["$text"]["$search"] += descendant
-    
+
     if is_filter_id_required:
         if query["$text"]["$search"]:
             query["$text"]["$search"] += " "
@@ -68,6 +71,7 @@ def apply_ontology_filter(query: dict, filter: OntologyFilter) -> dict:
 
     LOG.debug("QUERY: %s", query)
     return query
+
 
 def format_value(value: Union[str, List[int]]) -> Union[List[int], str, int, float]:
     if isinstance(value, list):
@@ -80,9 +84,13 @@ def format_value(value: Union[str, List[int]]) -> Union[List[int], str, int, flo
     else:
         return value
 
-def format_operator(operator: Operator) -> str:
+
+def format_operator(operator: Operator, value: Str) -> str:
     if operator == Operator.EQUAL:
-        return "$eq"
+        if "%" in value:
+            return "$regex"
+        else:
+            return "$eq"
     elif operator == Operator.NOT:
         return "$ne"
     elif operator == Operator.GREATER:
@@ -95,10 +103,15 @@ def format_operator(operator: Operator) -> str:
         # operator == Operator.LESS_EQUAL
         return "$lte"
 
+
 def apply_alphanumeric_filter(query: dict, filter: AlphanumericFilter) -> dict:
     formatted_value = format_value(filter.value)
-    formatted_operator = format_operator(filter.operator)
-    query[filter.id] = { formatted_operator: formatted_value }
+    formatted_operator = format_operator(filter.operator, filter.value)
+    if formatted_operator == "$regex":
+        query[filter.id] = {
+            formatted_operator: formatted_value.replace("%", ".*")}
+    else:
+        query[filter.id] = {formatted_operator: formatted_value}
     LOG.debug("QUERY: %s", query)
     return query
 

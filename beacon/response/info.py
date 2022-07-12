@@ -23,6 +23,7 @@ from bson import json_util
 
 LOG = logging.getLogger(__name__)
 
+
 async def handler(request: Request):
     LOG.info('Running a GET info request')
 
@@ -30,9 +31,9 @@ async def handler(request: Request):
     json_body = await request.json() if request.method == "POST" and request.has_body and request.can_read_body else {}
     qparams = RequestParams(**json_body).from_request(request)
     _, _, datasets = get_datasets(None, qparams)
-    beacon_datasets = [ r for r in datasets ]
+    beacon_datasets = [r for r in datasets]
 
-    all_datasets = [ r['_id'] for r in beacon_datasets]
+    all_datasets = [r['_id'] for r in beacon_datasets]
 
     access_token = request.headers.get('Authorization')
     if access_token:
@@ -45,6 +46,6 @@ async def handler(request: Request):
 
     response_converted = build_beacon_info_response(beacon_datasets,
                                                     qparams,
-                                                    lambda x,y,z: x,
+                                                    lambda x, y, z: x,
                                                     authorized_datasets if authenticated else [])
     return await json_stream(request, response_converted)

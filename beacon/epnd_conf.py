@@ -3,8 +3,8 @@
 #
 # Beacon general info
 #
-beacon_id = 'B2RI Demo Beacon'  # ID of the Beacon
-beacon_name = 'B2RI Demo Beacon'  # Name of the Beacon service
+beacon_id = 'epnd/uk.ac.le.lamp.www668'  # ID of the Beacon
+beacon_name = 'EPND demo Beacon'  # Name of the Beacon service
 api_version = 'v2.0.0'  # Version of the Beacon implementation
 uri = 'https://www668.lamp.le.ac.uk'
 beacon_granularity = "record"
@@ -33,8 +33,8 @@ description = (r"This <a href='https://beacon-project.io/'>Beacon</a> "
                r"is based on the GA4GH Beacon "
                r"<a href='https://github.com/ga4gh-beacon/specification-v2/blob/master/beacon.yaml'>v2.0</a>")
 version = 'v2.0'
-welcome_url = 'https://beacon.ega-archive.org/'
-alternative_url = 'https://beacon.ega-archive.org/api'
+welcome_url = 'https://www668.lamp.le.ac.uk'
+alternative_url = 'https://www668.lamp.le.ac.uk'
 create_datetime = '2021-11-29T12:00:00.000000'
 update_datetime = ''
 # update_datetime will be created when initializing the beacon, using the ISO 8601 format
@@ -42,8 +42,8 @@ update_datetime = ''
 #
 # Service
 #
-service_type = 'org.ga4gh:beacon:1.0.0'  # service type
-service_url = 'https://beacon.ega-archive.org/api/services'
+service_type = ''  # service type
+service_url = ""
 entry_point = False
 is_open = True
 # Documentation of the service
@@ -80,14 +80,14 @@ beacon_host = '0.0.0.0'
 beacon_port = 5050
 beacon_tls_enabled = False
 beacon_tls_client = False
-beacon_cert = '/etc/ega/server.cert'
-beacon_key = '/etc/ega/server.key'
-CA_cert = '/etc/ega/CA.cert'
+beacon_cert = ''
+beacon_key = ''
+CA_cert = ''
 
 #
 # Permissions server configuration
 #
-permissions_url = 'http://beacon-permissions'
+permissions_url = ''
 
 #
 # IdP endpoints (OpenID Connect/Oauth2)

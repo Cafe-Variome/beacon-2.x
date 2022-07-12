@@ -55,7 +55,8 @@ def main(path=None):
 
     # Configure the beacon
     beacon = web.Application(
-        middlewares=[web.normalize_path_middleware(), middlewares.error_middleware]
+        middlewares=[web.normalize_path_middleware(),
+                     middlewares.error_middleware]
     )
     beacon.on_startup.append(initialize)
     beacon.on_cleanup.append(destroy)
@@ -63,7 +64,8 @@ def main(path=None):
     # Prepare for the UI
     main_dir = Path(__file__).parent.parent.resolve()
     # Where the templates are
-    template_loader = jinja2.FileSystemLoader(str(main_dir / "ui" / "templates"))
+    template_loader = jinja2.FileSystemLoader(
+        str(main_dir / "ui" / "templates"))
     aiohttp_jinja2.setup(beacon, loader=template_loader)
 
     # Session middleware
@@ -86,7 +88,8 @@ def main(path=None):
         sslcontext = ssl.create_default_context(
             ssl.Purpose.CLIENT_AUTH if use_as_client else ssl.Purpose.SERVER_AUTH
         )
-        sslcontext.load_cert_chain(conf.beacon_cert, conf.beacon_key)  # should exist
+        sslcontext.load_cert_chain(
+            conf.beacon_cert, conf.beacon_key)  # should exist
         sslcontext.check_hostname = False
         # TODO: add the CA chain
 
@@ -100,7 +103,8 @@ def main(path=None):
         if os.path.exists(path):
             os.unlink(path)
         # will create the UDS socket and bind to it
-        web.run_app(beacon, path=path, shutdown_timeout=0, ssl_context=ssl_context)
+        web.run_app(beacon, path=path, shutdown_timeout=0,
+                    ssl_context=ssl_context)
     else:
         static_files = Path(__file__).parent.parent.resolve() / "ui" / "static"
         beacon.add_routes([web.static("/static", str(static_files))])

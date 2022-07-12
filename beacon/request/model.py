@@ -38,10 +38,12 @@ class Operator(StrEnum):
     LESS_EQUAL = "<=",
     GREATER_EQUAL = ">="
 
+
 class Granularity(StrEnum):
     BOOLEAN = "boolean",
     COUNT = "count",
     RECORD = "record"
+
 
 class OntologyFilter(CamelModel):
     id: str
@@ -95,9 +97,16 @@ class RequestParams(CamelModel):
                 elif k == "limit":
                     self.query.pagination.limit = int(v)
                 elif k == "includeResultsetResponses":
-                    self.query.include_resultset_responses = IncludeResultsetResponses(v)
+                    self.query.include_resultset_responses = IncludeResultsetResponses(
+                        v)
                 else:
-                    self.query.request_parameters[k] = v
+                    self.query.filters.append(
+                        {
+                            "id": k,
+                            "operator": "=",
+                            "value": v
+                        }
+                    )
         return self
 
     def summary(self):
