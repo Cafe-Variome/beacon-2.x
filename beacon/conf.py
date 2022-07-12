@@ -6,8 +6,18 @@
 beacon_id = 'B2RI Demo Beacon'  # ID of the Beacon
 beacon_name = 'B2RI Demo Beacon'  # Name of the Beacon service
 api_version = 'v2.0.0'  # Version of the Beacon implementation
+<<<<<<< HEAD
 uri = 'https://www668.lamp.le.ac.uk'
 beacon_granularity = "record"
+=======
+uri = 'https://beacon-giab-test.ega-archive.org'
+
+#
+# Beacon granularity
+#
+default_beacon_granularity = "record"
+max_beacon_granularity = "record"
+>>>>>>> 9c316689f1e0247f82dd372285479648063fb61d
 
 #
 #  Organization info

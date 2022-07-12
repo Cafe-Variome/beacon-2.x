@@ -3,6 +3,7 @@ import logging
 from aiohttp import web
 from aiohttp.web_request import Request
 from bson import json_util
+from beacon import conf
 
 from beacon.request import ontologies
 from beacon.request.model import Granularity, RequestParams
@@ -51,7 +52,9 @@ def generic_handler(db_fn, request=None):
         response_converted = records
 
         response = None
+
         if qparams.query.requested_granularity == Granularity.BOOLEAN:
+<<<<<<< HEAD
             response = build_beacon_boolean_response(
                 response_converted, count, qparams, lambda x, y: x, entity_schema)
         elif qparams.query.requested_granularity == Granularity.COUNT:
@@ -60,6 +63,26 @@ def generic_handler(db_fn, request=None):
         else:
             response = build_beacon_resultset_response(
                 response_converted, count, qparams, lambda x, y: x, entity_schema)
+=======
+            response = build_beacon_boolean_response(response_converted, count, qparams, lambda x, y: x, entity_schema)
+        
+        elif qparams.query.requested_granularity == Granularity.COUNT:
+            if conf.max_beacon_granularity == Granularity.BOOLEAN:
+                response = build_beacon_boolean_response(response_converted, count, qparams, lambda x, y: x, entity_schema)
+            else:
+                response = build_beacon_count_response(response_converted, count, qparams, lambda x, y: x, entity_schema)
+        
+        # qparams.query.requested_granularity == Granularity.RECORD:
+        else:
+
+            if conf.max_beacon_granularity == Granularity.BOOLEAN:
+                response = build_beacon_boolean_response(response_converted, count, qparams, lambda x, y: x, entity_schema)
+            elif conf.max_beacon_granularity == Granularity.COUNT:
+                response = build_beacon_count_response(response_converted, count, qparams, lambda x, y: x, entity_schema)
+            else:
+                response = build_beacon_resultset_response(response_converted, count, qparams, lambda x, y: x, entity_schema)
+                
+>>>>>>> 9c316689f1e0247f82dd372285479648063fb61d
         return await json_stream(request, response)
 
     return wrapper
@@ -74,6 +97,7 @@ def filtering_terms_handler(db_fn, request=None):
 
         # Get response
         _, _, records = db_fn(entry_id, qparams)
+<<<<<<< HEAD
         response_converted = (
             [r for r in records] if records else []
         )
@@ -81,6 +105,10 @@ def filtering_terms_handler(db_fn, request=None):
                      for onto in ontologies.ONTOLOGIES.values()]
         response = build_filtering_terms_response(
             response_converted, resources, qparams)
+=======
+        resources = ontologies.get_resources()
+        response = build_filtering_terms_response(records, resources, qparams)
+>>>>>>> 9c316689f1e0247f82dd372285479648063fb61d
         return await json_stream(request, response)
 
     return wrapper
