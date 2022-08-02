@@ -70,7 +70,7 @@ class Pagination(CamelModel):
 
 
 class RequestMeta(CamelModel):
-    requested_schemas: List[str] = []
+    requested_schemas: List[dict] = []
     api_version: str = conf.api_version
 
 
@@ -80,7 +80,7 @@ class RequestQuery(CamelModel):
     pagination: Pagination = Pagination()
     request_parameters: dict = {}
     test_mode: bool = False
-    requested_granularity: Granularity = Granularity(conf.default_beacon_granularity)
+    requested_granularity: Granularity = Granularity(conf.beacon_granularity)
 
 
 class RequestParams(CamelModel):

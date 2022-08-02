@@ -6,6 +6,9 @@ class DefaultSchemas(Enum):
     BIOSAMPLES = {"entityType": "biosample", "schema": "beacon-dataset-v2.0.0"}
     COHORTS = {"entityType": "cohort", "schema": "beacon-cohort-v2.0.0"}
     DATASETS = {"entityType": "dataset", "schema": "beacon-dataset-v2.0.0"}
-    GENOMICVARIATIONS = {"entityType": "genomicVariation", "schema": "beacon-g_variant-v2.0.0"}
-    INDIVIDUALS = {"entityType": "individual", "schema": "beacon-individual-v2.0.0"}
+    GENOMICVARIATIONS = {"entityType": "genomicVariation",
+                         "schema": "beacon-g_variant-v2.0.0"}
+    INDIVIDUALS = {"entityType": "individual",
+                   "schema": "beacon-individual-v2.0.0"}
     RUNS = {"entityType": "run", "schema": "beacon-run-v2.0.0"}
+    EPND = {"entityType": "epnd-entry", "schema": "epnd-schemav0.1"}

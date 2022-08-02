@@ -109,7 +109,7 @@ def apply_alphanumeric_filter(query: dict, filter: AlphanumericFilter) -> dict:
     formatted_operator = format_operator(filter.operator, filter.value)
     if formatted_operator == "$regex":
         query[filter.id] = {
-            formatted_operator: formatted_value.replace("%", ".*")}
+            formatted_operator: "^"+formatted_value.replace("%", ".*")+"$"}
     else:
         query[filter.id] = {formatted_operator: formatted_value}
     LOG.debug("QUERY: %s", query)

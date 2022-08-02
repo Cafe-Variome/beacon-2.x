@@ -10,9 +10,9 @@ routes = [
     ########################################
     # CONFIG
     ########################################
-    web.get('/api/', info.handler),
+    web.get('/api/', info.ejp_handler),
     # Name added to redirect / -> /info
-    web.get('/api/info/', info.handler, name="info"),
+    web.get('/api/info/', info.ejp_handler, name="info"),
     web.get('/api/service-info/', service_info.handler),
     web.get('/api/filtering_terms/',
             filtering_terms_handler(db_fn=filtering_terms.get_filtering_terms)),

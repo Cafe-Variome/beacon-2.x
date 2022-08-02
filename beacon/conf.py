@@ -6,18 +6,8 @@
 beacon_id = 'B2RI Demo Beacon'  # ID of the Beacon
 beacon_name = 'B2RI Demo Beacon'  # Name of the Beacon service
 api_version = 'v2.0.0'  # Version of the Beacon implementation
-<<<<<<< HEAD
 uri = 'https://www668.lamp.le.ac.uk'
 beacon_granularity = "record"
-=======
-uri = 'https://beacon-giab-test.ega-archive.org'
-
-#
-# Beacon granularity
-#
-default_beacon_granularity = "record"
-max_beacon_granularity = "record"
->>>>>>> 9c316689f1e0247f82dd372285479648063fb61d
 
 #
 #  Organization info
@@ -75,10 +65,10 @@ beacon_handovers = [
 #
 database_host = '127.0.0.1'
 database_port = 27017
-database_user = 'root'
-database_password = 'example'
+database_user = False
 database_name = 'beacon'
-database_auth_source = 'admin'
+database_auth_source = False
+database_password = False
 # database_schema = 'public' # comma-separated list of schemas
 # database_app_name = 'beacon-appname' # Useful to track connections
 

@@ -1,7 +1,6 @@
 import re
 import fastobo
 import networkx
-import requests
 from beacon.request.model import Similarity
 from pronto.ontology import Ontology
 from os import scandir, listdir
@@ -9,7 +8,7 @@ from pathlib import Path
 
 from owlready2 import OwlReadyOntologyParsingError
 from tqdm import tqdm
-from typing import Dict, Optional, Set, List
+from typing import Set, List
 from beacon.db import client
 from beacon import conf
 import owlready2
@@ -19,6 +18,7 @@ LOG = logging.getLogger(__name__)
 
 ONTOLOGIES = {}
 ONTOLOGY_REGEX = re.compile(r"([_A-Za-z]+):(\w+)")
+
 
 def find_all_ontologies_used() -> Set[str]:
     ontologies = set()
@@ -38,7 +38,8 @@ def find_all_ontology_terms_used() -> Set[str]:
 
 def find_ontologies_used(collection_name: str) -> Set[str]:
     ontologies = set()
-    count = client.beacon.get_collection(collection_name).estimated_document_count()
+    count = client.beacon.get_collection(
+        collection_name).estimated_document_count()
     xs = client.beacon.get_collection(collection_name).find()
     for r in tqdm(xs, total=count):
         matches = ONTOLOGY_REGEX.findall(str(r))
@@ -49,7 +50,8 @@ def find_ontologies_used(collection_name: str) -> Set[str]:
 
 def find_ontology_terms_used(collection_name: str) -> Set[str]:
     terms = set()
-    count = client.beacon.get_collection(collection_name).estimated_document_count()
+    count = client.beacon.get_collection(
+        collection_name).estimated_document_count()
     xs = client.beacon.get_collection(collection_name).find()
     for r in tqdm(xs, total=count):
         matches = ONTOLOGY_REGEX.findall(str(r))
@@ -66,10 +68,12 @@ def load():
         if filename.is_file() and filename.name.lower().endswith(".owl"):
             try:
                 LOG.debug("Loading ontology {} of {}".format(i, count))
-                ONTOLOGIES[filename.name[:-4]] = owlready2.get_ontology(filename.path).load()
+                ONTOLOGIES[filename.name[:-4]
+                           ] = owlready2.get_ontology(filename.path).load()
             except OwlReadyOntologyParsingError:
                 # TODO: Add error
                 continue
+
 
 def try_convert_owl_to_obo():
     ontology_directory = conf.ontologies_folder
@@ -77,7 +81,8 @@ def try_convert_owl_to_obo():
     for i, filename in enumerate(tqdm(scandir(ontology_directory), total=count)):
         new_filename = Path(filename.path).with_suffix(".obo")
         if filename.is_file() and filename.name.lower().endswith(".owl") and not new_filename.exists():
-            LOG.debug("Transforming {} to {}".format(filename.path, new_filename))
+            LOG.debug("Transforming {} to {}".format(
+                filename.path, new_filename))
             owl_onto: Ontology = Ontology(filename.path)
             with open(new_filename, "wb") as f:
                 owl_onto.dump(f, format="obo")
@@ -90,7 +95,8 @@ def load_obo():
     for i, filename in enumerate(tqdm(scandir(ontology_directory), total=count)):
         if filename.is_file() and filename.name.lower().endswith(".obo"):
             try:
-                LOG.debug("Loading ontology {} of {} ({})".format(i, count, filename.name[:-4]))
+                LOG.debug("Loading ontology {} of {} ({})".format(
+                    i, count, filename.name[:-4]))
                 ONTOLOGIES[filename.name[:-4]] = fastobo.load(filename.path)
                 LOG.debug(ONTOLOGIES[filename.name[:-4]] is None)
             except:
@@ -142,9 +148,11 @@ def get_ontology_neighbours(term: str, depth: int) -> List[str]:
     successors = set(knowledge_graph.successors(term))
     for _ in range(1, depth):
         for predecessor in predecessors:
-            predecessors = predecessors.union(set(knowledge_graph.predecessors(predecessor)))
+            predecessors = predecessors.union(
+                set(knowledge_graph.predecessors(predecessor)))
         for successor in successors:
-            successors = successors.union(set(knowledge_graph.successors(successor)))
+            successors = successors.union(
+                set(knowledge_graph.successors(successor)))
 
     # Combine results
     terms = set()
@@ -154,6 +162,7 @@ def get_ontology_neighbours(term: str, depth: int) -> List[str]:
     terms = terms.union(successors)
 
     return list(terms)
+
 
 def get_similar_ontology_terms(term: str, similarity: Similarity) -> List[str]:
     if similarity == Similarity.EXACT:
@@ -167,23 +176,25 @@ def get_similar_ontology_terms(term: str, similarity: Similarity) -> List[str]:
         return get_ontology_neighbours(term, depth=3)
 
 
-def get_ontology_config(ontology: owlready2.Ontology) -> Optional[Dict]:
-    ontology_url = "https://www.ebi.ac.uk/ols/api/ontologies/{}".format(ontology.name)
-    try:
-        return requests.get(ontology_url).json()["config"]
-    except:
-        return None
+# def get_ontology_config(ontology: owlready2.Ontology) -> Optional[Dict]:
+#     ontology_url = "https://www.ebi.ac.uk/ols/api/ontologies/{}".format(
+#         ontology.name)
+#     try:
+#         return requests.get(ontology_url).json()["config"]
+#     except:
+#         return None
 
-def get_resources() -> List[Dict]:
-    resources = []
-    for onto in ONTOLOGIES.values():
-        ontology_config = get_ontology_config(onto)
-        resources.append({ 
-            "id": onto.name,
-            "name": ontology_config["title"] if ontology_config else onto.name,
-            "url": ontology_config["id"] if ontology_config else onto.base_iri,
-            "version": ontology_config["version"] if ontology_config else None,
-            "nameSpacePrefix": ontology_config["namespace"].upper() if ontology_config else None,
-            "iriPrefix": ontology_config["baseUris"][0] if ontology_config else None,
-        })
-    return resources
+
+# def get_resources() -> List[Dict]:
+#     resources = []
+#     for onto in ONTOLOGIES.values():
+#         ontology_config = get_ontology_config(onto)
+#         resources.append({
+#             "id": onto.name,
+#             "name": ontology_config["title"] if ontology_config else onto.name,
+#             "url": ontology_config["id"] if ontology_config else onto.base_iri,
+#             "version": ontology_config["version"] if ontology_config else None,
+#             "nameSpacePrefix": ontology_config["namespace"].upper() if ontology_config else None,
+#             "iriPrefix": ontology_config["baseUris"][0] if ontology_config else None,
+#         })
+#     return resources

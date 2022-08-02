@@ -7,9 +7,8 @@ from pymongo.mongo_client import MongoClient
 import urllib.request
 import os
 from tqdm import tqdm
-import conf
-
-ONTOLOGY_REGEX = re.compile(r"([_A-Za-z]+):(\w+)")
+from beacon import conf
+from beacon.request.ontologies import ONTOLOGY_REGEX
 
 client = MongoClient(
     "mongodb://{}:{}@{}:{}/{}?authSource={}".format(

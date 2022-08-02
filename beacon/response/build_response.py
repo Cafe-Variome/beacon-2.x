@@ -1,12 +1,11 @@
 from typing import Optional
 
-from beacon import conf
+from beacon import conf, epnd_conf
 from beacon.db.schemas import DefaultSchemas
 from beacon.request import RequestParams
-from beacon.request.model import Granularity
 
 
-def build_meta(qparams: RequestParams, entity_schema: Optional[DefaultSchemas], returned_granularity: Granularity):
+def build_meta(qparams: RequestParams, entity_schema: Optional[DefaultSchemas]):
     """"Builds the `meta` part of the response
 
     We assume that receivedRequest is the evaluated request (qparams) sent by the user.
@@ -15,7 +14,7 @@ def build_meta(qparams: RequestParams, entity_schema: Optional[DefaultSchemas], 
     meta = {
         'beaconId': conf.beacon_id,
         'apiVersion': conf.api_version,
-        'returnedGranularity': returned_granularity,
+        'returnedGranularity': qparams.query.requested_granularity,
         'receivedRequestSummary': qparams.summary(),
         'returnedSchemas': [entity_schema.value] if entity_schema is not None else []
     }
@@ -64,7 +63,7 @@ def build_beacon_resultset_response(data,
     """
 
     beacon_response = {
-        'meta': build_meta(qparams, entity_schema, Granularity.RECORD),
+        'meta': build_meta(qparams, entity_schema),
         'responseSummary': build_response_summary(num_total_results > 0, num_total_results),
         # TODO: 'extendedInfo': build_extended_info(),
         'response': {
@@ -73,6 +72,7 @@ def build_beacon_resultset_response(data,
         'beaconHandovers': conf.beacon_handovers,
     }
     return beacon_response
+
 
 ########################################
 # Count Response
@@ -89,7 +89,7 @@ def build_beacon_count_response(data,
     """
 
     beacon_response = {
-        'meta': build_meta(qparams, entity_schema, Granularity.COUNT),
+        'meta': build_meta(qparams, entity_schema),
         'responseSummary': build_response_summary(num_total_results > 0, num_total_results),
         # TODO: 'extendedInfo': build_extended_info(),
         'beaconHandovers': conf.beacon_handovers,
@@ -111,7 +111,7 @@ def build_beacon_boolean_response(data,
     """
 
     beacon_response = {
-        'meta': build_meta(qparams, entity_schema, Granularity.BOOLEAN),
+        'meta': build_meta(qparams, entity_schema),
         'responseSummary': build_response_summary(num_total_results > 0, None),
         # TODO: 'extendedInfo': build_extended_info(),
         'beaconHandovers': conf.beacon_handovers,
@@ -125,7 +125,7 @@ def build_beacon_boolean_response(data,
 
 def build_beacon_collection_response(data, num_total_results, qparams: RequestParams, func_response_type, entity_schema: DefaultSchemas):
     beacon_response = {
-        'meta': build_meta(qparams, entity_schema, Granularity.RECORD),
+        'meta': build_meta(qparams, entity_schema),
         'responseSummary': build_response_summary(num_total_results > 0, num_total_results),
         # TODO: 'info': build_extended_info(),
         'beaconHandovers': conf.beacon_handovers,
@@ -145,7 +145,7 @@ def build_beacon_info_response(data, qparams, func_response_type, authorized_dat
         authorized_datasets = []
 
     beacon_response = {
-        'meta': build_meta(qparams, None, Granularity.RECORD),
+        'meta': build_meta(qparams, None),
         'response': {
             'id': conf.beacon_id,
             'name': conf.beacon_name,
@@ -210,7 +210,7 @@ def build_beacon_service_info_response():
 
 def build_filtering_terms_response(filtering_terms, resources, qparams: RequestParams):
     return {
-        "meta": build_meta(qparams, None, Granularity.RECORD),
+        "meta": build_meta(qparams, entity_schema=None),
         "response": {
             "resources": resources,
             "filteringTerms": filtering_terms

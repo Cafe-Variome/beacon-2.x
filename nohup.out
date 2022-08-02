@@ -1,0 +1,954 @@
+[ __main__ ][ INFO ] (L97) Loading ontologies... (this might take a while)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 8577.31it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 38836.15it/s]
+[ __main__ ][ INFO ] (L99) Finished loading the ontologies...
+[ __main__ ][ INFO ] (L43) Initialization done.
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:12:53:45 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.response.middlewares][ERROR ] (L50) Error on page /favicon.ico: Not Found
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:12:53:46 +0000] "GET /favicon.ico HTTP/1.1" 200 1471 "https://www668.lamp.le.ac.uk/epnd/api/epnd/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.response.info][ INFO ] (L86) Running a GET info request
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:12:53:51 +0000] "GET /epnd/api/ HTTP/1.1" 200 6741 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.response.middlewares][ERROR ] (L50) Error on page /epnd/api/filtering_tyerms: Not Found
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:12:53:54 +0000] "GET /epnd/api/filtering_tyerms HTTP/1.1" 200 1471 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:12:53:54 +0000] "GET /static/css/error.css HTTP/1.1" 200 236 "https://www668.lamp.le.ac.uk/epnd/api/filtering_tyerms" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:12:53:58 +0000] "GET /epnd/api/filtering_terms/ HTTP/1.1" 200 939 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.response.middlewares][ERROR ] (L50) Error on page /favicon.ico: Not Found
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:12:53:58 +0000] "GET /favicon.ico HTTP/1.1" 200 1471 "https://www668.lamp.le.ac.uk/epnd/api/filtering_terms/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.response.middlewares][ERROR ] (L50) Error on page /epnd: Not Found
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:12:56:05 +0000] "GET /epnd HTTP/1.1" 200 1471 "-" "PostmanRuntime/7.26.8"
+[beacon.response.middlewares][ERROR ] (L50) Error on page /favicon.ico: Not Found
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:12:56:25 +0000] "GET /favicon.ico HTTP/1.1" 200 1471 "https://www668.lamp.le.ac.uk/epnd/api/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:12:56:50 +0000] "GET /epnd/api HTTP/1.1" 308 212 "-" "PostmanRuntime/7.26.8"
+[beacon.response.info][ INFO ] (L86) Running a GET info request
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:12:56:50 +0000] "GET /epnd/api/ HTTP/1.1" 200 6741 "https://www668.lamp.le.ac.uk/epnd/api" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:12:58:11 +0000] "GET /epnd/api/info HTTP/1.1" 308 217 "-" "PostmanRuntime/7.26.8"
+[beacon.response.info][ INFO ] (L86) Running a GET info request
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:12:58:11 +0000] "GET /epnd/api/info/ HTTP/1.1" 200 6741 "https://www668.lamp.le.ac.uk/epnd/api/info" "PostmanRuntime/7.26.8"
+[ __main__ ][ INFO ] (L97) Loading ontologies... (this might take a while)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 15768.06it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 41120.63it/s]
+[ __main__ ][ INFO ] (L99) Finished loading the ontologies...
+[ __main__ ][ INFO ] (L43) Initialization done.
+[beacon.response.info][ INFO ] (L86) Running a GET info request
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:12:59:56 +0000] "GET /epnd/api/ HTTP/1.1" 200 1416 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.response.middlewares][ERROR ] (L50) Error on page /favicon.ico: Not Found
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:12:59:57 +0000] "GET /favicon.ico HTTP/1.1" 200 1471 "https://www668.lamp.le.ac.uk/epnd/api/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:13:01:25 +0000] "GET /epnd/api/configuration HTTP/1.1" 308 226 "-" "PostmanRuntime/7.26.8"
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:13:01:25 +0000] "GET /epnd/api/configuration/ HTTP/1.1" 200 1302 "https://www668.lamp.le.ac.uk/epnd/api/configuration" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:13:01:54 +0000] "GET /epnd/api/entry_types HTTP/1.1" 308 224 "-" "PostmanRuntime/7.26.8"
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:13:01:54 +0000] "GET /epnd/api/entry_types/ HTTP/1.1" 200 751 "https://www668.lamp.le.ac.uk/epnd/api/entry_types" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:13:02:30 +0000] "GET /epnd/api/map HTTP/1.1" 308 216 "-" "PostmanRuntime/7.26.8"
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:13:02:30 +0000] "GET /epnd/api/map/ HTTP/1.1" 200 680 "https://www668.lamp.le.ac.uk/epnd/api/map" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:13:03:18 +0000] "GET /epnd/api/filtering_terms HTTP/1.1" 308 228 "-" "PostmanRuntime/7.26.8"
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:13:03:18 +0000] "GET /epnd/api/filtering_terms/ HTTP/1.1" 200 939 "https://www668.lamp.le.ac.uk/epnd/api/filtering_terms" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:13:03:45 +0000] "GET /epnd/api/service-info HTTP/1.1" 308 225 "-" "PostmanRuntime/7.26.8"
+[beacon.response.service_info][ INFO ] (L16) Running a GET service info request
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:13:03:45 +0000] "GET /epnd/api/service-info/ HTTP/1.1" 200 807 "https://www668.lamp.le.ac.uk/epnd/api/service-info" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:13:04:13 +0000] "GET /epnd/api/epnd HTTP/1.1" 308 217 "-" "PostmanRuntime/7.26.8"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:13:04:13 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "https://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:13:04:48 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "PostmanRuntime/7.26.8"
+[aiohttp.server][ERROR ] (L405) Error handling request
+Traceback (most recent call last):
+  File "/local/software/anaconda/lib/python3.8/site-packages/aiohttp/web_protocol.py", line 435, in _handle_request
+    resp = await request_handler(request)
+  File "/local/software/anaconda/lib/python3.8/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/local/software/anaconda/lib/python3.8/site-packages/aiohttp/web_middlewares.py", line 117, in impl
+    return await handler(request)
+  File "/local/software/anaconda/lib/python3.8/site-packages/aiohttp/web_middlewares.py", line 108, in impl
+    return await handler(request)
+  File "/local/beacon-2.x/beacon/response/middlewares.py", line 46, in error_middleware
+    return await handler(request)
+  File "/local/software/anaconda/lib/python3.8/site-packages/aiohttp_session/__init__.py", line 154, in factory
+    response = await handler(request)
+  File "/local/beacon-2.x/beacon/request/handlers.py", line 74, in wrapper
+    qparams = RequestParams(**json_body).from_request(request)
+  File "pydantic/main.py", line 341, in pydantic.main.BaseModel.__init__
+pydantic.error_wrappers.ValidationError: 1 validation error for RequestParams
+meta -> requestedSchemas -> 0
+  str type expected (type=type_error.str)
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:13:04:48 +0000] "POST /epnd/api/epnd/ HTTP/1.1" 500 244 "https://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[ __main__ ][ INFO ] (L48) Shutting down.
+======== Running on http://0.0.0.0:5050 ========
+(Press CTRL+C to quit)
+[ __main__ ][ INFO ] (L97) Loading ontologies... (this might take a while)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 14074.85it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 47662.55it/s]
+[ __main__ ][ INFO ] (L99) Finished loading the ontologies...
+[ __main__ ][ INFO ] (L43) Initialization done.
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:13:19:29 +0000] "GET /epnd/api HTTP/1.1" 308 212 "-" "PostmanRuntime/7.26.8"
+[beacon.response.info][ INFO ] (L86) Running a GET info request
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:13:19:29 +0000] "GET /epnd/api/ HTTP/1.1" 200 1416 "https://www668.lamp.le.ac.uk/epnd/api" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:13:19:32 +0000] "GET /epnd/api/info HTTP/1.1" 308 217 "-" "PostmanRuntime/7.26.8"
+[beacon.response.info][ INFO ] (L86) Running a GET info request
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:13:19:32 +0000] "GET /epnd/api/info/ HTTP/1.1" 200 1416 "https://www668.lamp.le.ac.uk/epnd/api/info" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:13:19:37 +0000] "GET /epnd/api/configuration HTTP/1.1" 308 226 "-" "PostmanRuntime/7.26.8"
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:13:19:37 +0000] "GET /epnd/api/configuration/ HTTP/1.1" 200 1302 "https://www668.lamp.le.ac.uk/epnd/api/configuration" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:13:19:40 +0000] "GET /epnd/api/entry_types HTTP/1.1" 308 224 "-" "PostmanRuntime/7.26.8"
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:13:19:40 +0000] "GET /epnd/api/entry_types/ HTTP/1.1" 200 751 "https://www668.lamp.le.ac.uk/epnd/api/entry_types" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:13:19:42 +0000] "GET /epnd/api/map HTTP/1.1" 308 216 "-" "PostmanRuntime/7.26.8"
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:13:19:42 +0000] "GET /epnd/api/map/ HTTP/1.1" 200 680 "https://www668.lamp.le.ac.uk/epnd/api/map" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:13:19:45 +0000] "GET /epnd/api/filtering_terms HTTP/1.1" 308 228 "-" "PostmanRuntime/7.26.8"
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:13:19:45 +0000] "GET /epnd/api/filtering_terms/ HTTP/1.1" 200 939 "https://www668.lamp.le.ac.uk/epnd/api/filtering_terms" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:13:19:47 +0000] "GET /epnd/api/service-info HTTP/1.1" 308 225 "-" "PostmanRuntime/7.26.8"
+[beacon.response.service_info][ INFO ] (L16) Running a GET service info request
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:13:19:47 +0000] "GET /epnd/api/service-info/ HTTP/1.1" 200 807 "https://www668.lamp.le.ac.uk/epnd/api/service-info" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:13:19:49 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "PostmanRuntime/7.26.8"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 1
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: title = AR%
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'title': {'$regex': '^AR.*$'}}
+[beacon.db.utils][DEBUG ] (L32) FINAL QUERY (COUNT): {'$and': [{'title': {'$regex': '^AR.*$'}}]}
+[beacon.db.utils][DEBUG ] (L33) Returning count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {'$and': [{'title': {'$regex': '^AR.*$'}}]}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [14/Jul/2022:13:19:49 +0000] "POST /epnd/api/epnd/ HTTP/1.1" 200 919 "https://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[beacon.response.middlewares][ERROR ] (L50) Error on page /favicon.ico: Not Found
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [15/Jul/2022:07:25:29 +0000] "GET /favicon.ico HTTP/1.1" 200 1471 "https://www668.lamp.le.ac.uk/ejp/api/datasets/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [15/Jul/2022:07:38:24 +0000] "GET /ejp/api/datasets/ HTTP/1.1" 200 3005 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.response.middlewares][ERROR ] (L50) Error on page /favicon.ico: Not Found
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [15/Jul/2022:07:38:25 +0000] "GET /favicon.ico HTTP/1.1" 200 1471 "https://www668.lamp.le.ac.uk/ejp/api/datasets/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 1
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: name = %RREC%
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'name': {'$regex': '^.*RREC.*$'}}
+[beacon.db.utils][DEBUG ] (L32) FINAL QUERY (COUNT): {'$and': [{'name': {'$regex': '^.*RREC.*$'}}]}
+[beacon.db.utils][DEBUG ] (L33) Returning count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {'$and': [{'name': {'$regex': '^.*RREC.*$'}}]}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [15/Jul/2022:07:38:42 +0000] "GET /ejp/api/datasets/?name=%RREC% HTTP/1.1" 200 3050 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.response.middlewares][ERROR ] (L50) Error on page /favicon.ico: Not Found
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [15/Jul/2022:07:38:43 +0000] "GET /favicon.ico HTTP/1.1" 200 1471 "https://www668.lamp.le.ac.uk/ejp/api/datasets/?name=%RREC%" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 1
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: catalogueName = EuRRECa
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'catalogueName': {'$eq': 'EuRRECa'}}
+[beacon.db.utils][DEBUG ] (L32) FINAL QUERY (COUNT): {'$and': [{'catalogueName': {'$eq': 'EuRRECa'}}]}
+[beacon.db.utils][DEBUG ] (L33) Returning count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {'$and': [{'catalogueName': {'$eq': 'EuRRECa'}}]}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [19/Jul/2022:10:15:28 +0000] "GET /ejp/api/datasets/?catalogueName=EuRRECa HTTP/1.1" 200 766 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.response.middlewares][ERROR ] (L50) Error on page /favicon.ico: Not Found
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [19/Jul/2022:10:15:29 +0000] "GET /favicon.ico HTTP/1.1" 200 1471 "https://www668.lamp.le.ac.uk/ejp/api/datasets/?catalogueName=EuRRECa" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [19/Jul/2022:10:15:34 +0000] "GET /ejp/api/datasets/ HTTP/1.1" 200 3005 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [19/Jul/2022:10:15:34 +0000] "GET /ejp/api/datasets HTTP/1.1" 308 220 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.response.middlewares][ERROR ] (L50) Error on page /favicon.ico: Not Found
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [19/Jul/2022:10:15:34 +0000] "GET /favicon.ico HTTP/1.1" 200 1471 "https://www668.lamp.le.ac.uk/ejp/api/datasets/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [19/Jul/2022:10:15:55 +0000] "GET /ejp/api/datasets/ HTTP/1.1" 200 3005 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.response.middlewares][ERROR ] (L50) Error on page /favicon.ico: Not Found
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [19/Jul/2022:10:15:56 +0000] "GET /favicon.ico HTTP/1.1" 200 1471 "https://www668.lamp.le.ac.uk/ejp/api/datasets/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [19/Jul/2022:10:16:46 +0000] "GET /ejp/api/datasets?name=%25RR%25 HTTP/1.1" 308 234 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 1
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: name = %RR%
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'name': {'$regex': '^.*RR.*$'}}
+[beacon.db.utils][DEBUG ] (L32) FINAL QUERY (COUNT): {'$and': [{'name': {'$regex': '^.*RR.*$'}}]}
+[beacon.db.utils][DEBUG ] (L33) Returning count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {'$and': [{'name': {'$regex': '^.*RR.*$'}}]}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [19/Jul/2022:10:16:46 +0000] "GET /ejp/api/datasets/?name=%25RR%25 HTTP/1.1" 200 3048 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.response.middlewares][ERROR ] (L50) Error on page /favicon.ico: Not Found
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [19/Jul/2022:10:16:47 +0000] "GET /favicon.ico HTTP/1.1" 200 1471 "https://www668.lamp.le.ac.uk/ejp/api/datasets/?name=%25RR%25" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 1
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: name = %RR%
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'name': {'$regex': '^.*RR.*$'}}
+[beacon.db.utils][DEBUG ] (L32) FINAL QUERY (COUNT): {'$and': [{'name': {'$regex': '^.*RR.*$'}}]}
+[beacon.db.utils][DEBUG ] (L33) Returning count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {'$and': [{'name': {'$regex': '^.*RR.*$'}}]}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [19/Jul/2022:10:17:53 +0000] "GET /ejp/api/datasets/?name=%25RR%25 HTTP/1.1" 200 3048 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.response.middlewares][ERROR ] (L50) Error on page /favicon.ico: Not Found
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [19/Jul/2022:10:17:54 +0000] "GET /favicon.ico HTTP/1.1" 200 1471 "https://www668.lamp.le.ac.uk/ejp/api/datasets/?name=%25RR%25" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 1
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: name = %test%
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'name': {'$regex': '^.*test.*$'}}
+[beacon.db.utils][DEBUG ] (L32) FINAL QUERY (COUNT): {'$and': [{'name': {'$regex': '^.*test.*$'}}]}
+[beacon.db.utils][DEBUG ] (L33) Returning count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {'$and': [{'name': {'$regex': '^.*test.*$'}}]}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [19/Jul/2022:10:18:01 +0000] "GET /ejp/api/datasets/?name=%25test%25 HTTP/1.1" 200 1178 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.response.middlewares][ERROR ] (L50) Error on page /favicon.ico: Not Found
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [19/Jul/2022:10:18:01 +0000] "GET /favicon.ico HTTP/1.1" 200 1471 "https://www668.lamp.le.ac.uk/ejp/api/datasets/?name=%25test%25" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [19/Jul/2022:10:18:59 +0000] "POST /ejp/api/datasets HTTP/1.1" 308 220 "-" "PostmanRuntime/7.26.8"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 2
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: catalogueName = %EuRREC%
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'catalogueName': {'$regex': '^.*EuRREC.*$'}}
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: catalogueAddress = https://www448.lamp.le.ac.uk/InterERN/beaconApi/
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'catalogueAddress': {'$eq': 'https://www448.lamp.le.ac.uk/InterERN/beaconApi/'}}
+[beacon.db.utils][DEBUG ] (L32) FINAL QUERY (COUNT): {'$and': [{'catalogueName': {'$regex': '^.*EuRREC.*$'}}, {'catalogueAddress': {'$eq': 'https://www448.lamp.le.ac.uk/InterERN/beaconApi/'}}]}
+[beacon.db.utils][DEBUG ] (L33) Returning count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {'$and': [{'catalogueName': {'$regex': '^.*EuRREC.*$'}}, {'catalogueAddress': {'$eq': 'https://www448.lamp.le.ac.uk/InterERN/beaconApi/'}}]}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [19/Jul/2022:10:18:59 +0000] "POST /ejp/api/datasets/ HTTP/1.1" 200 866 "https://www668.lamp.le.ac.uk/ejp/api/datasets" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [19/Jul/2022:10:19:18 +0000] "POST /ejp/api/datasets HTTP/1.1" 308 220 "-" "PostmanRuntime/7.26.8"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 1
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: catalogueName = %test%
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'catalogueName': {'$regex': '^.*test.*$'}}
+[beacon.db.utils][DEBUG ] (L32) FINAL QUERY (COUNT): {'$and': [{'catalogueName': {'$regex': '^.*test.*$'}}]}
+[beacon.db.utils][DEBUG ] (L33) Returning count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {'$and': [{'catalogueName': {'$regex': '^.*test.*$'}}]}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [19/Jul/2022:10:19:18 +0000] "POST /ejp/api/datasets/ HTTP/1.1" 200 764 "https://www668.lamp.le.ac.uk/ejp/api/datasets" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [19/Jul/2022:10:19:34 +0000] "POST /ejp/api/datasets HTTP/1.1" 308 220 "-" "PostmanRuntime/7.26.8"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 1
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: name = %test%
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'name': {'$regex': '^.*test.*$'}}
+[beacon.db.utils][DEBUG ] (L32) FINAL QUERY (COUNT): {'$and': [{'name': {'$regex': '^.*test.*$'}}]}
+[beacon.db.utils][DEBUG ] (L33) Returning count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {'$and': [{'name': {'$regex': '^.*test.*$'}}]}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [19/Jul/2022:10:19:34 +0000] "POST /ejp/api/datasets/ HTTP/1.1" 200 1177 "https://www668.lamp.le.ac.uk/ejp/api/datasets" "PostmanRuntime/7.26.8"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 1
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: name = %test%
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'name': {'$regex': '^.*test.*$'}}
+[beacon.db.utils][DEBUG ] (L32) FINAL QUERY (COUNT): {'$and': [{'name': {'$regex': '^.*test.*$'}}]}
+[beacon.db.utils][DEBUG ] (L33) Returning count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {'$and': [{'name': {'$regex': '^.*test.*$'}}]}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [19/Jul/2022:12:27:51 +0000] "GET /ejp/api/datasets/?name=%25test%25 HTTP/1.1" 200 1178 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.response.middlewares][ERROR ] (L50) Error on page /favicon.ico: Not Found
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [19/Jul/2022:12:27:52 +0000] "GET /favicon.ico HTTP/1.1" 200 1471 "https://www668.lamp.le.ac.uk/ejp/api/datasets/?name=%25test%25" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 1
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: name = %test%
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'name': {'$regex': '^.*test.*$'}}
+[beacon.db.utils][DEBUG ] (L32) FINAL QUERY (COUNT): {'$and': [{'name': {'$regex': '^.*test.*$'}}]}
+[beacon.db.utils][DEBUG ] (L33) Returning count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {'$and': [{'name': {'$regex': '^.*test.*$'}}]}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [19/Jul/2022:12:28:03 +0000] "GET /ejp/api/datasets/?name=%25test%25 HTTP/1.1" 200 1602 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.response.middlewares][ERROR ] (L50) Error on page /favicon.ico: Not Found
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [19/Jul/2022:12:28:03 +0000] "GET /favicon.ico HTTP/1.1" 200 1471 "https://www668.lamp.le.ac.uk/ejp/api/datasets/?name=%25test%25" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.response.middlewares][ERROR ] (L50) Error on page /favicon.ico: Not Found
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [20/Jul/2022:07:03:39 +0000] "GET /favicon.ico HTTP/1.1" 200 1471 "https://www668.lamp.le.ac.uk/ejp/api/datasets/?name=%25test%25" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [20/Jul/2022:12:22:51 +0000] "POST /ejp/api/datasets HTTP/1.1" 308 220 "-" "PostmanRuntime/7.26.8"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 1
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: name = %test%
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'name': {'$regex': '^.*test.*$'}}
+[beacon.db.utils][DEBUG ] (L32) FINAL QUERY (COUNT): {'$and': [{'name': {'$regex': '^.*test.*$'}}]}
+[beacon.db.utils][DEBUG ] (L33) Returning count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {'$and': [{'name': {'$regex': '^.*test.*$'}}]}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [20/Jul/2022:12:22:51 +0000] "POST /ejp/api/datasets/ HTTP/1.1" 200 1601 "https://www668.lamp.le.ac.uk/ejp/api/datasets" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [20/Jul/2022:12:24:01 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "PostmanRuntime/7.26.8"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 1
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: title = AR%
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'title': {'$regex': '^AR.*$'}}
+[beacon.db.utils][DEBUG ] (L32) FINAL QUERY (COUNT): {'$and': [{'title': {'$regex': '^AR.*$'}}]}
+[beacon.db.utils][DEBUG ] (L33) Returning count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {'$and': [{'title': {'$regex': '^AR.*$'}}]}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [20/Jul/2022:12:24:01 +0000] "POST /epnd/api/epnd/ HTTP/1.1" 200 919 "https://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [20/Jul/2022:12:24:25 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "PostmanRuntime/7.26.8"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 1
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: title = %AR%
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'title': {'$regex': '^.*AR.*$'}}
+[beacon.db.utils][DEBUG ] (L32) FINAL QUERY (COUNT): {'$and': [{'title': {'$regex': '^.*AR.*$'}}]}
+[beacon.db.utils][DEBUG ] (L33) Returning count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {'$and': [{'title': {'$regex': '^.*AR.*$'}}]}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [20/Jul/2022:12:24:25 +0000] "POST /epnd/api/epnd/ HTTP/1.1" 200 1914 "https://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[beacon.response.middlewares][ERROR ] (L50) Error on page /epnd_form: Not Found
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [20/Jul/2022:12:53:15 +0000] "GET /epnd_form HTTP/1.1" 200 1471 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [20/Jul/2022:12:53:15 +0000] "GET /static/css/error.css HTTP/1.1" 200 236 "https://www668.lamp.le.ac.uk/epnd_form" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.response.middlewares][ERROR ] (L50) Error on page /epnd_form: Not Found
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [20/Jul/2022:12:53:52 +0000] "GET /epnd_form HTTP/1.1" 200 1471 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.response.middlewares][ERROR ] (L50) Error on page /demo/includes/form.php: Not Found
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [20/Jul/2022:12:55:04 +0000] "GET /demo/includes/form.php HTTP/1.1" 200 1471 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.response.middlewares][ERROR ] (L50) Error on page /api/epnd/: Not Found
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [20/Jul/2022:13:02:06 +0000] "GET /api/epnd/ HTTP/1.1" 200 1471 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [20/Jul/2022:13:02:12 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.response.middlewares][ERROR ] (L50) Error on page /favicon.ico: Not Found
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [20/Jul/2022:13:02:12 +0000] "GET /favicon.ico HTTP/1.1" 200 1471 "https://www668.lamp.le.ac.uk/epnd/api/epnd/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.response.middlewares][ERROR ] (L50) Error on page /favicon.ico: Not Found
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:07:30:33 +0000] "GET /favicon.ico HTTP/1.1" 200 1471 "https://www668.lamp.le.ac.uk/epnd/api/epnd/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 1
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: name = %test%
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'name': {'$regex': '^.*test.*$'}}
+[beacon.db.utils][DEBUG ] (L32) FINAL QUERY (COUNT): {'$and': [{'name': {'$regex': '^.*test.*$'}}]}
+[beacon.db.utils][DEBUG ] (L33) Returning count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {'$and': [{'name': {'$regex': '^.*test.*$'}}]}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:07:30:38 +0000] "GET /ejp/api/datasets/?name=%25test%25 HTTP/1.1" 200 1602 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.response.middlewares][ERROR ] (L50) Error on page /favicon.ico: Not Found
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:07:30:41 +0000] "GET /favicon.ico HTTP/1.1" 200 1471 "https://www668.lamp.le.ac.uk/ejp/api/datasets/?name=%25test%25" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:04:28 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "PostmanRuntime/7.26.8"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:04:28 +0000] "POST /epnd/api/epnd/ HTTP/1.1" 200 6166 "https://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:04:54 +0000] "GET /epnd/api/epnd HTTP/1.1" 308 217 "http://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:04:54 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "https://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:05:01 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "PostmanRuntime/7.26.8"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:05:01 +0000] "POST /epnd/api/epnd/ HTTP/1.1" 200 6166 "https://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:10:58 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:10:58 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:11:17 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:11:17 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:13:54 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:13:55 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:13:55 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:13:55 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:14:17 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:14:17 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:14:17 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:14:17 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:14:47 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:14:47 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:15:19 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:15:19 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:20:44 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:20:44 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:21:57 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:21:57 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:22:21 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:22:21 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:23:07 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:23:07 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:23:46 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:23:46 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:24:14 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:24:14 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:25:16 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "PostmanRuntime/7.26.8"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:25:16 +0000] "POST /epnd/api/epnd/ HTTP/1.1" 200 6166 "https://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:26:00 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:26:00 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:26:59 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:26:59 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:27:19 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:10:27:19 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:11:55:54 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:11:55:54 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:11:56:29 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:11:56:29 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:11:56:37 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:11:56:37 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:11:56:50 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:11:56:50 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:11:58:21 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:11:58:21 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:11:58:45 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "PostmanRuntime/7.26.8"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:11:58:45 +0000] "POST /epnd/api/epnd/ HTTP/1.1" 200 6166 "https://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:11:59:05 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "PostmanRuntime/7.26.8"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 1
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: description = %cardiac%
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'description': {'$regex': '^.*cardiac.*$'}}
+[beacon.db.utils][DEBUG ] (L32) FINAL QUERY (COUNT): {'$and': [{'description': {'$regex': '^.*cardiac.*$'}}]}
+[beacon.db.utils][DEBUG ] (L33) Returning count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {'$and': [{'description': {'$regex': '^.*cardiac.*$'}}]}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:11:59:05 +0000] "POST /epnd/api/epnd/ HTTP/1.1" 200 1734 "https://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:11:59:49 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:11:59:49 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:00:26 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:00:26 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:01:03 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "PostmanRuntime/7.26.8"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 1
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: description = %cardiac%
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'description': {'$regex': '^.*cardiac.*$'}}
+[beacon.db.utils][DEBUG ] (L32) FINAL QUERY (COUNT): {'$and': [{'description': {'$regex': '^.*cardiac.*$'}}]}
+[beacon.db.utils][DEBUG ] (L33) Returning count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {'$and': [{'description': {'$regex': '^.*cardiac.*$'}}]}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:01:03 +0000] "POST /epnd/api/epnd/ HTTP/1.1" 200 1734 "https://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:01:14 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "PostmanRuntime/7.26.8"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 1
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: title = covid heart
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'title': {'$eq': 'covid heart'}}
+[beacon.db.utils][DEBUG ] (L32) FINAL QUERY (COUNT): {'$and': [{'title': {'$eq': 'covid heart'}}]}
+[beacon.db.utils][DEBUG ] (L33) Returning count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {'$and': [{'title': {'$eq': 'covid heart'}}]}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:01:14 +0000] "POST /epnd/api/epnd/ HTTP/1.1" 200 927 "https://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:01:40 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "PostmanRuntime/7.26.8"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 1
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: title = covid heart
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'title': {'$eq': 'covid heart'}}
+[beacon.db.utils][DEBUG ] (L32) FINAL QUERY (COUNT): {'$and': [{'title': {'$eq': 'covid heart'}}]}
+[beacon.db.utils][DEBUG ] (L33) Returning count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {'$and': [{'title': {'$eq': 'covid heart'}}]}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:01:40 +0000] "POST /epnd/api/epnd/ HTTP/1.1" 200 927 "https://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:02:08 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "PostmanRuntime/7.26.8"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 1
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: description = %cardiac%
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'description': {'$regex': '^.*cardiac.*$'}}
+[beacon.db.utils][DEBUG ] (L32) FINAL QUERY (COUNT): {'$and': [{'description': {'$regex': '^.*cardiac.*$'}}]}
+[beacon.db.utils][DEBUG ] (L33) Returning count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {'$and': [{'description': {'$regex': '^.*cardiac.*$'}}]}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:02:08 +0000] "POST /epnd/api/epnd/ HTTP/1.1" 200 1734 "https://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:02:18 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:02:18 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:02:33 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:02:33 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:03:15 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:03:15 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:04:12 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:04:12 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:05:09 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:05:09 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:05:38 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:05:38 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:06:14 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:06:14 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:06:25 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "PostmanRuntime/7.26.8"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 1
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: description = %cardiac%
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'description': {'$regex': '^.*cardiac.*$'}}
+[beacon.db.utils][DEBUG ] (L32) FINAL QUERY (COUNT): {'$and': [{'description': {'$regex': '^.*cardiac.*$'}}]}
+[beacon.db.utils][DEBUG ] (L33) Returning count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {'$and': [{'description': {'$regex': '^.*cardiac.*$'}}]}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:06:25 +0000] "POST /epnd/api/epnd/ HTTP/1.1" 200 1734 "https://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:06:48 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:06:48 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:07:01 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:07:01 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:07:20 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:07:20 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:08:29 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:08:29 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:08:31 +0000] "POST /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:08:31 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:09:26 +0000] "GET /epnd/api/epnd HTTP/1.1" 308 217 "http://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:09:26 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "https://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:10:08 +0000] "GET /epnd/api/epnd HTTP/1.1" 308 217 "http://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:10:08 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "https://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:10:36 +0000] "GET /epnd/api/epnd HTTP/1.1" 308 217 "http://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:10:36 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "https://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:11:12 +0000] "GET /epnd/api/epnd HTTP/1.1" 308 217 "http://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:11:12 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "https://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:11:59 +0000] "GET /epnd/api/epnd HTTP/1.1" 308 217 "http://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:11:59 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "https://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:12:06 +0000] "GET /epnd/api/epnd HTTP/1.1" 308 217 "http://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:12:06 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "https://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:12:12 +0000] "GET /epnd/api/epnd HTTP/1.1" 308 217 "http://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:12:12 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "https://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:13:02 +0000] "GET /epnd/api/epnd HTTP/1.1" 308 217 "http://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:13:02 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "https://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:13:35 +0000] "GET /epnd/api/epnd HTTP/1.1" 308 217 "http://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:13:35 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "https://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:14:02 +0000] "GET /epnd/api/epnd HTTP/1.1" 308 217 "http://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:14:02 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "https://www668.lamp.le.ac.uk/epnd/api/epnd" "PostmanRuntime/7.26.8"
+[ __main__ ][ INFO ] (L48) Shutting down.
+======== Running on http://0.0.0.0:5050 ========
+(Press CTRL+C to quit)
+[ __main__ ][ INFO ] (L97) Loading ontologies... (this might take a while)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 17119.61it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 49344.75it/s]
+[ __main__ ][ INFO ] (L99) Finished loading the ontologies...
+[ __main__ ][ INFO ] (L43) Initialization done.
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:59:10 +0000] "GET /epnd/api/epnd?description=%25cardiac%25 HTTP/1.1" 308 243 "-" "-"
+[beacon.request.handlers][DEBUG ] (L75) <Request GET /epnd/api/epnd/ >
+[beacon.db.filters][DEBUG ] (L19) Filters len = 1
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: description = %cardiac%
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'description': {'$regex': '^.*cardiac.*$'}}
+[beacon.db.utils][DEBUG ] (L32) FINAL QUERY (COUNT): {'$and': [{'description': {'$regex': '^.*cardiac.*$'}}]}
+[beacon.db.utils][DEBUG ] (L33) Returning count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {'$and': [{'description': {'$regex': '^.*cardiac.*$'}}]}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:12:59:10 +0000] "GET /epnd/api/epnd/?description=%25cardiac%25 HTTP/1.1" 200 1662 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:13:04:36 +0000] "GET /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.request.handlers][DEBUG ] (L75) <Request GET /epnd/api/epnd/ >
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:13:04:36 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:13:06:32 +0000] "GET /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.request.handlers][DEBUG ] (L75) <Request GET /epnd/api/epnd/ >
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:13:06:32 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:13:07:19 +0000] "GET /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.request.handlers][DEBUG ] (L75) <Request GET /epnd/api/epnd/ >
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:13:07:19 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:13:07:24 +0000] "GET /epnd/api/epnd?description=%25cardiac%25 HTTP/1.1" 308 243 "-" "-"
+[beacon.request.handlers][DEBUG ] (L75) <Request GET /epnd/api/epnd/ >
+[beacon.db.filters][DEBUG ] (L19) Filters len = 1
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: description = %cardiac%
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'description': {'$regex': '^.*cardiac.*$'}}
+[beacon.db.utils][DEBUG ] (L32) FINAL QUERY (COUNT): {'$and': [{'description': {'$regex': '^.*cardiac.*$'}}]}
+[beacon.db.utils][DEBUG ] (L33) Returning count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {'$and': [{'description': {'$regex': '^.*cardiac.*$'}}]}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:13:07:24 +0000] "GET /epnd/api/epnd/?description=%25cardiac%25 HTTP/1.1" 200 1662 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:13:08:02 +0000] "GET /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.request.handlers][DEBUG ] (L75) <Request GET /epnd/api/epnd/ >
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:13:08:02 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:13:09:05 +0000] "GET /epnd/api/epnd?title=MUrMuR HTTP/1.1" 308 230 "-" "-"
+[beacon.request.handlers][DEBUG ] (L75) <Request GET /epnd/api/epnd/ >
+[beacon.db.filters][DEBUG ] (L19) Filters len = 1
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: title = MUrMuR
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'title': {'$eq': 'MUrMuR'}}
+[beacon.db.utils][DEBUG ] (L32) FINAL QUERY (COUNT): {'$and': [{'title': {'$eq': 'MUrMuR'}}]}
+[beacon.db.utils][DEBUG ] (L33) Returning count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {'$and': [{'title': {'$eq': 'MUrMuR'}}]}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:13:09:05 +0000] "GET /epnd/api/epnd/?title=MUrMuR HTTP/1.1" 200 850 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:13:09:29 +0000] "GET /epnd/api/epnd?title=MUrMuR HTTP/1.1" 308 230 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.request.handlers][DEBUG ] (L75) <Request GET /epnd/api/epnd/ >
+[beacon.db.filters][DEBUG ] (L19) Filters len = 1
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: title = MUrMuR
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'title': {'$eq': 'MUrMuR'}}
+[beacon.db.utils][DEBUG ] (L32) FINAL QUERY (COUNT): {'$and': [{'title': {'$eq': 'MUrMuR'}}]}
+[beacon.db.utils][DEBUG ] (L33) Returning count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {'$and': [{'title': {'$eq': 'MUrMuR'}}]}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:13:09:29 +0000] "GET /epnd/api/epnd/?title=MUrMuR HTTP/1.1" 200 850 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.response.middlewares][ERROR ] (L50) Error on page /favicon.ico: Not Found
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:13:09:29 +0000] "GET /favicon.ico HTTP/1.1" 200 1471 "https://www668.lamp.le.ac.uk/epnd/api/epnd/?title=MUrMuR" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.request.handlers][DEBUG ] (L75) <Request GET /epnd/api/epnd/ >
+[beacon.db.filters][DEBUG ] (L19) Filters len = 1
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: title = %MUrMuR%
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'title': {'$regex': '^.*MUrMuR.*$'}}
+[beacon.db.utils][DEBUG ] (L32) FINAL QUERY (COUNT): {'$and': [{'title': {'$regex': '^.*MUrMuR.*$'}}]}
+[beacon.db.utils][DEBUG ] (L33) Returning count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {'$and': [{'title': {'$regex': '^.*MUrMuR.*$'}}]}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:13:09:38 +0000] "GET /epnd/api/epnd/?title=%25MUrMuR%25 HTTP/1.1" 200 1067 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.response.middlewares][ERROR ] (L50) Error on page /favicon.ico: Not Found
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:13:09:38 +0000] "GET /favicon.ico HTTP/1.1" 200 1471 "https://www668.lamp.le.ac.uk/epnd/api/epnd/?title=%25MUrMuR%25" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:13:11:04 +0000] "GET /epnd/api/epnd?title=MUrMuR HTTP/1.1" 308 230 "-" "-"
+[beacon.request.handlers][DEBUG ] (L75) <Request GET /epnd/api/epnd/ >
+[beacon.db.filters][DEBUG ] (L19) Filters len = 1
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: title = MUrMuR
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'title': {'$eq': 'MUrMuR'}}
+[beacon.db.utils][DEBUG ] (L32) FINAL QUERY (COUNT): {'$and': [{'title': {'$eq': 'MUrMuR'}}]}
+[beacon.db.utils][DEBUG ] (L33) Returning count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {'$and': [{'title': {'$eq': 'MUrMuR'}}]}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:13:11:04 +0000] "GET /epnd/api/epnd/?title=MUrMuR HTTP/1.1" 200 850 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:13:11:16 +0000] "GET /epnd/api/epnd?title=%25MUrMuR%25 HTTP/1.1" 308 236 "-" "-"
+[beacon.request.handlers][DEBUG ] (L75) <Request GET /epnd/api/epnd/ >
+[beacon.db.filters][DEBUG ] (L19) Filters len = 1
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: title = %MUrMuR%
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'title': {'$regex': '^.*MUrMuR.*$'}}
+[beacon.db.utils][DEBUG ] (L32) FINAL QUERY (COUNT): {'$and': [{'title': {'$regex': '^.*MUrMuR.*$'}}]}
+[beacon.db.utils][DEBUG ] (L33) Returning count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {'$and': [{'title': {'$regex': '^.*MUrMuR.*$'}}]}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:13:11:16 +0000] "GET /epnd/api/epnd/?title=%25MUrMuR%25 HTTP/1.1" 200 1067 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:13:59:42 +0000] "GET /epnd/api/epnd?title=%25MUrMuR%25 HTTP/1.1" 308 236 "-" "-"
+[beacon.request.handlers][DEBUG ] (L75) <Request GET /epnd/api/epnd/ >
+[beacon.db.filters][DEBUG ] (L19) Filters len = 1
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: title = %MUrMuR%
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'title': {'$regex': '^.*MUrMuR.*$'}}
+[beacon.db.utils][DEBUG ] (L32) FINAL QUERY (COUNT): {'$and': [{'title': {'$regex': '^.*MUrMuR.*$'}}]}
+[beacon.db.utils][DEBUG ] (L33) Returning count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {'$and': [{'title': {'$regex': '^.*MUrMuR.*$'}}]}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:13:59:42 +0000] "GET /epnd/api/epnd/?title=%25MUrMuR%25 HTTP/1.1" 200 1067 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:14:00:32 +0000] "GET /epnd/api/epnd?title=%25MUrMuR%25 HTTP/1.1" 308 236 "-" "-"
+[beacon.request.handlers][DEBUG ] (L75) <Request GET /epnd/api/epnd/ >
+[beacon.db.filters][DEBUG ] (L19) Filters len = 1
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: title = %MUrMuR%
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'title': {'$regex': '^.*MUrMuR.*$'}}
+[beacon.db.utils][DEBUG ] (L32) FINAL QUERY (COUNT): {'$and': [{'title': {'$regex': '^.*MUrMuR.*$'}}]}
+[beacon.db.utils][DEBUG ] (L33) Returning count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {'$and': [{'title': {'$regex': '^.*MUrMuR.*$'}}]}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:14:00:32 +0000] "GET /epnd/api/epnd/?title=%25MUrMuR%25 HTTP/1.1" 200 1067 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:14:15:22 +0000] "GET /epnd/api/epnd?description=%25cardiac%25 HTTP/1.1" 308 243 "-" "-"
+[beacon.request.handlers][DEBUG ] (L75) <Request GET /epnd/api/epnd/ >
+[beacon.db.filters][DEBUG ] (L19) Filters len = 1
+[beacon.db.filters][DEBUG ] (L26) Alphanumeric filter: description = %cardiac%
+[beacon.db.filters][DEBUG ] (L115) QUERY: {'description': {'$regex': '^.*cardiac.*$'}}
+[beacon.db.utils][DEBUG ] (L32) FINAL QUERY (COUNT): {'$and': [{'description': {'$regex': '^.*cardiac.*$'}}]}
+[beacon.db.utils][DEBUG ] (L33) Returning count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {'$and': [{'description': {'$regex': '^.*cardiac.*$'}}]}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:14:15:22 +0000] "GET /epnd/api/epnd/?description=%25cardiac%25 HTTP/1.1" 200 1662 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:14:16:29 +0000] "GET /epnd/api/epnd HTTP/1.1" 308 217 "-" "-"
+[beacon.request.handlers][DEBUG ] (L75) <Request GET /epnd/api/epnd/ >
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [21/Jul/2022:14:16:29 +0000] "GET /epnd/api/epnd/ HTTP/1.1" 200 6115 "-" "-"
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [29/Jul/2022:09:23:00 +0000] "GET /ejp/api/datasets HTTP/1.1" 308 220 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.request.handlers][DEBUG ] (L28) {}
+[beacon.db.filters][DEBUG ] (L19) Filters len = 0
+[beacon.db.utils][DEBUG ] (L29) Returning estimated count
+[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
+[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
+[beacon.utils.stream][DEBUG ] (L30) Partial content: False
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [29/Jul/2022:09:23:00 +0000] "GET /ejp/api/datasets/ HTTP/1.1" 200 3005 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+[beacon.response.middlewares][ERROR ] (L50) Error on page /favicon.ico: Not Found
+[aiohttp.access][ INFO ] (L206) 127.0.0.1 [29/Jul/2022:09:23:02 +0000] "GET /favicon.ico HTTP/1.1" 200 1471 "https://www668.lamp.le.ac.uk/ejp/api/datasets/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
