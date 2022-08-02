@@ -1,12 +1,11 @@
+import logging
+import json
 from typing import Optional
 from beacon.db import client
 from beacon.db.filters import apply_filters
 from beacon.db.utils import query_id, get_documents, get_count
-from beacon.filtering_terms_epnd import filtering_terms
 from beacon.request.model import RequestParams
-import json
 
-import logging
 LOG = logging.getLogger(__name__)
 
 

@@ -4,7 +4,7 @@ Beacon Framework Configuration Endpoints.
 
 # import logging
 
-from beacon import conf, epnd_conf
+from beacon import conf
 
 # LOG = logging.getLogger(__name__)
 from beacon.db.schemas import DefaultSchemas

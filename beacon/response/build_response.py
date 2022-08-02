@@ -1,6 +1,6 @@
 from typing import Optional
 
-from beacon import conf, epnd_conf
+from beacon import conf
 from beacon.db.schemas import DefaultSchemas
 from beacon.request import RequestParams
 
