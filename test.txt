@@ -1,16 +1,0 @@
-[ __main__ ][ INFO ] (L97) Loading ontologies... (this might take a while)
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 10010.27it/s]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 43690.67it/s]
-[ __main__ ][ INFO ] (L99) Finished loading the ontologies...
-[ __main__ ][ INFO ] (L43) Initialization done.
-[beacon.db.filters][DEBUG ] (L19) Filters len = 0
-[beacon.db.utils][DEBUG ] (L29) Returning estimated count
-[beacon.db.utils][DEBUG ] (L38) FINAL QUERY: {}
-[beacon.utils.stream][DEBUG ] (L25) HTTP response stream
-[beacon.utils.stream][DEBUG ] (L30) Partial content: False
-[aiohttp.access][ INFO ] (L206) 127.0.0.1 [11/Jul/2022:10:31:34 +0000] "GET /epnd/api/datasets/ HTTP/1.1" 200 6352 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
-[beacon.response.middlewares][ERROR ] (L50) Error on page /favicon.ico: Not Found
-[aiohttp.access][ INFO ] (L206) 127.0.0.1 [11/Jul/2022:10:31:35 +0000] "GET /favicon.ico HTTP/1.1" 200 1471 "https://www668.lamp.le.ac.uk/epnd/api/datasets/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
-[ __main__ ][ INFO ] (L48) Shutting down.
-======== Running on http://0.0.0.0:5050 ========
-(Press CTRL+C to quit)
