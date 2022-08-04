@@ -9,7 +9,7 @@ from beacon.request.model import RequestParams
 LOG = logging.getLogger(__name__)
 
 
-def get_filtering_terms(entry_id: Optional[str], qparams: RequestParams):
+def get_filtering_terms():
     filtering_terms = [
         {
             "type": "alphanumeric",
@@ -28,8 +28,13 @@ def get_filtering_terms(entry_id: Optional[str], qparams: RequestParams):
         },
         {
             "type": "alphanumeric",
-            "id": "resourceTypes",
+            "id": "resourceType",
             "label": "Unique identifier of the resource"
+        },
+        {
+            "type": "alphanumeric",
+            "id": "apiVersion",
+            "label": "apiVersion supported by this resource"
         }
     ]
-    return "", "", filtering_terms
+    return filtering_terms

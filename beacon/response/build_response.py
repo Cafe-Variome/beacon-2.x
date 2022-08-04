@@ -216,3 +216,20 @@ def build_filtering_terms_response(filtering_terms, resources, qparams: RequestP
             "filteringTerms": filtering_terms
         }
     }
+
+########################################
+# Error Response
+########################################
+
+
+def build_error_response(error,
+                         qparams: RequestParams,
+                         entity_schema: DefaultSchemas):
+    """"
+    Transform data into the Beacon response format.
+    """
+    beacon_response = {
+        'error': error,
+        'meta': build_meta(qparams, entity_schema),
+    }
+    return beacon_response

@@ -26,13 +26,13 @@ routes = [
     ########################################
 
     web.get('/api/datasets/',
-            collection_handler(db_fn=datasets.get_datasets)),
+            generic_handler(db_fn=datasets.get_datasets)),
 
     ########################################
     # POST
     ########################################
 
     web.post('/api/datasets/',
-             collection_handler(db_fn=datasets.get_datasets)),
+             generic_handler(db_fn=datasets.get_datasets)),
 
 ]

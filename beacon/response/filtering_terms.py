@@ -14,7 +14,7 @@ from beacon.utils.stream import json_stream
 
 
 async def handler(request, qparams: RequestParams, entity_schema: DefaultSchemas):
-    _, _, docs = get_filtering_terms(entry_id=None, qparams=qparams)
+    docs = get_filtering_terms()
     ontology_terms = [
         {
             'id': record['ontology'] + ':' + record['term'],
