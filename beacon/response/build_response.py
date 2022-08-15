@@ -166,7 +166,16 @@ def build_beacon_info_response(data, qparams, func_response_type, authorized_dat
             'alternativeUrl': conf.alternative_url,
             'createDateTime': conf.create_datetime,
             'updateDateTime': conf.update_datetime,
-            'datasets': func_response_type(data, qparams, authorized_datasets),
+            'info': {
+                'apiVersions': {
+                    'QueryBuilder': {},
+                    'Beacon': {
+                        'v2.0.0': 'https://www508.lamp.le.ac.uk/api/'
+                    }
+                },
+                'resourceTypes': ["knowledgeBase"],
+                'EJP-id': "3ed6370e-1bd8-4466-9f43-82abc8472289dwDAD"
+            }
         }
     }
 

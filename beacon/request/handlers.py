@@ -46,9 +46,13 @@ def generic_handler(db_fn, request=None):
 
         # Get params
         LOG.debug(request.url)
-        json_body = await request.json() if request.method == "POST" and request.has_body and request.can_read_body else {}
-        invalid_filters = validate_filters(json_body)
+        json_body = await request.json() if request.method == "POST" and request.can_read_body else {}
         qparams = RequestParams(**json_body).from_request(request)
+
+        ############
+        # Check for any filters which are not part of this beacon instance and return an error
+        ############
+        invalid_filters = validate_filters(json_body)
         if invalid_filters != set():
             error = {
                 "errorCode": "400",
@@ -56,6 +60,7 @@ def generic_handler(db_fn, request=None):
             }
             response = build_error_response(error, qparams, None)
             return await json_stream(request, response)
+        ##############
         else:
             entry_id = request.match_info.get('id', None)
 

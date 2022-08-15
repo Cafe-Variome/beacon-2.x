@@ -28,12 +28,12 @@ def get_filtering_terms():
         },
         {
             "type": "alphanumeric",
-            "id": "resourceType",
+            "id": "resourceTypes",
             "label": "Unique identifier of the resource"
         },
         {
             "type": "alphanumeric",
-            "id": "apiVersion",
+            "id": "apiVersions",
             "label": "apiVersion supported by this resource"
         }
     ]

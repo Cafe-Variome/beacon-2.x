@@ -13,9 +13,9 @@ LOG = logging.getLogger(__name__)
 def get_datasets(entry_id: Optional[str], qparams: RequestParams):
     query = apply_filters({}, qparams.query.filters)
     schema = DefaultSchemas.DATASETS
-    count = get_count(client.beacon.ejp, query)
+    count = get_count(client.beacon.datasets, query)
     docs = get_documents(
-        client.beacon.ejp,
+        client.beacon.datasets,
         query,
         qparams.query.pagination.skip,
         qparams.query.pagination.limit
