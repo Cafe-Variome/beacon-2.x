@@ -3,27 +3,26 @@
 #
 # Beacon general info
 #
-beacon_id = 'B2RI Demo Beacon'  # ID of the Beacon
-beacon_name = 'B2RI Demo Beacon'  # Name of the Beacon service
+beacon_id = ''  # ID of the Beacon
+beacon_name = ''  # Name of the Beacon service
 api_version = 'v2.0.0'  # Version of the Beacon implementation
-uri = 'https://www668.lamp.le.ac.uk'
-beacon_granularity = "record"
+uri = ''
+beacon_granularity = ""
 
 #
 #  Organization info
 #
-org_id = 'UoL'  # Id of the organization
-org_name = 'Brookeslab, University of Leicester'  # Full name
-org_description = (
-    'Bioinformatics Research Group at the University of Leicester')
+org_id = ''  # Id of the organization
+org_name = ''  # Full name
+org_description = ()
 org_adress = ('The University of Leicester',
               'University Road',
               'Leicester',
               'LE1 7RH',
-              'United Kingdom')
-org_welcome_url = 'https://le.ac.uk/'
-org_contact_url = 'mailto:ts339@le.ac.uk'
-org_logo_url = 'https://beacon.cafevariome.org/img/uol_logo.png'
+              'United Kingdom') # filled in with a correctly formatted example
+org_welcome_url = ''
+org_contact_url = ''
+org_logo_url = ''
 org_info = ''
 
 #
@@ -33,9 +32,9 @@ description = (r"This <a href='https://beacon-project.io/'>Beacon</a> "
                r"is based on the GA4GH Beacon "
                r"<a href='https://github.com/ga4gh-beacon/specification-v2/blob/master/beacon.yaml'>v2.0</a>")
 version = 'v2.0'
-welcome_url = 'https://beacon.ega-archive.org/'
-alternative_url = 'https://beacon.ega-archive.org/api'
-create_datetime = '2021-11-29T12:00:00.000000'
+welcome_url = ''
+alternative_url = ''
+create_datetime = ''
 update_datetime = ''
 # update_datetime will be created when initializing the beacon, using the ISO 8601 format
 
@@ -87,24 +86,24 @@ CA_cert = '/etc/ega/CA.cert'
 #
 # Permissions server configuration
 #
-permissions_url = 'http://beacon-permissions'
+# permissions_url = 'http://beacon-permissions'
 
 #
 # IdP endpoints (OpenID Connect/Oauth2)
 #
 # or use Elixir AAI (see https://elixir-europe.org/services/compute/aai)
 #
-idp_client_id = 'beacon'
-idp_client_secret = 'b26ca0f9-1137-4bee-b453-ee51eefbe7ba'  # same as in the test IdP
-idp_scope = 'profile openid'
+# idp_client_id = 'beacon'
+# idp_client_secret = 'b26ca0f9-1137-4bee-b453-ee51eefbe7ba'  # same as in the test IdP
+# idp_scope = 'profile openid'
 
-idp_authorize = 'http://idp/auth/realms/Beacon/protocol/openid-connect/auth'
-idp_access_token = 'http://idp/auth/realms/Beacon/protocol/openid-connect/token'
-idp_introspection = 'http://idp/auth/realms/Beacon/protocol/openid-connect/token/introspect'
-idp_user_info = 'http://idp/auth/realms/Beacon/protocol/openid-connect/userinfo'
-idp_logout = 'http://idp/auth/realms/Beacon/protocol/openid-connect/logout'
+# idp_authorize = 'http://idp/auth/realms/Beacon/protocol/openid-connect/auth'
+# idp_access_token = 'http://idp/auth/realms/Beacon/protocol/openid-connect/token'
+# idp_introspection = 'http://idp/auth/realms/Beacon/protocol/openid-connect/token/introspect'
+# idp_user_info = 'http://idp/auth/realms/Beacon/protocol/openid-connect/userinfo'
+# idp_logout = 'http://idp/auth/realms/Beacon/protocol/openid-connect/logout'
 
-idp_redirect_uri = 'http://beacon:5050/login'
+# idp_redirect_uri = 'http://beacon:5050/login'
 
 #
 # UI
